@@ -1,0 +1,1172 @@
+{
+  "input_data": {
+    "raw_prompt_or_messages": [
+      {
+        "role": "system",
+        "content": "You are a helpful assistant."
+      },
+      {
+        "role": "user",
+        "content": "Hello!"
+      }
+    ],
+    "prompt_text_before_formatting": null,
+    "final_prompt_text_after_formatting": " <|system|>\nYou are a helpful assistant. \n<|user|>\nHello! \n<|assistant|>\n"
+  },
+  "tokenization": {
+    "full_token_id_list": [
+      529,
+      29989,
+      5205,
+      29989,
+      29958,
+      13,
+      3492,
+      526,
+      263,
+      8444,
+      20255,
+      29889,
+      2,
+      29871,
+      13,
+      29966,
+      29989,
+      1792,
+      29989,
+      29958,
+      13,
+      10994,
+      29991,
+      2,
+      29871,
+      13,
+      29966,
+      29989,
+      465,
+      22137,
+      29989,
+      29958,
+      13
+    ],
+    "total_token_count": 33,
+    "first_50_tokens": [
+      529,
+      29989,
+      5205,
+      29989,
+      29958,
+      13,
+      3492,
+      526,
+      263,
+      8444,
+      20255,
+      29889,
+      2,
+      29871,
+      13,
+      29966,
+      29989,
+      1792,
+      29989,
+      29958,
+      13,
+      10994,
+      29991,
+      2,
+      29871,
+      13,
+      29966,
+      29989,
+      465,
+      22137,
+      29989,
+      29958,
+      13
+    ],
+    "last_50_tokens": [
+      529,
+      29989,
+      5205,
+      29989,
+      29958,
+      13,
+      3492,
+      526,
+      263,
+      8444,
+      20255,
+      29889,
+      2,
+      29871,
+      13,
+      29966,
+      29989,
+      1792,
+      29989,
+      29958,
+      13,
+      10994,
+      29991,
+      2,
+      29871,
+      13,
+      29966,
+      29989,
+      465,
+      22137,
+      29989,
+      29958,
+      13
+    ],
+    "bos_or_special_inserted_automatically": false
+  },
+  "generation_configuration": {
+    "suffix": null,
+    "max_tokens": 5,
+    "temperature": 0.2,
+    "top_p": 0.95,
+    "min_p": 0.05,
+    "typical_p": 1.0,
+    "logprobs": null,
+    "echo": false,
+    "stop": [
+      "</s>"
+    ],
+    "frequency_penalty": 0.0,
+    "presence_penalty": 0.0,
+    "repeat_penalty": 1.0,
+    "top_k": 40,
+    "stream": false,
+    "seed": null,
+    "tfs_z": 1.0,
+    "mirostat_mode": 0,
+    "mirostat_tau": 5.0,
+    "mirostat_eta": 0.1,
+    "model": null,
+    "stopping_criteria": [
+      "<function Jinja2ChatFormatter.__call__.<locals>.stop_on_last_token at 0x7f08c6c0b6a0>"
+    ],
+    "logits_processor": null,
+    "grammar": null,
+    "logit_bias": null
+  },
+  "model_output": {
+    "generated_text": "I'm not a",
+    "generated_token_ids": [
+      306,
+      29915,
+      29885,
+      451,
+      263
+    ],
+    "number_of_generated_tokens": 5
+  },
+  "binding_component_usage": [
+    {
+      "module_name": "llama_cpp.llama",
+      "class_name": "Llama",
+      "function_name": "create_chat_completion",
+      "first_call_order": 1
+    },
+    {
+      "module_name": "llama_cpp.llama_chat_format",
+      "class_name": null,
+      "function_name": "chat_completion_handler",
+      "first_call_order": 2
+    },
+    {
+      "module_name": "llama_cpp.llama_chat_format",
+      "class_name": "Jinja2ChatFormatter",
+      "function_name": "__call__",
+      "first_call_order": 3
+    },
+    {
+      "module_name": "llama_cpp.llama_chat_format",
+      "class_name": "ChatFormatterResponse",
+      "function_name": "__init__",
+      "first_call_order": 4
+    },
+    {
+      "module_name": "llama_cpp.llama",
+      "class_name": "Llama",
+      "function_name": "tokenize",
+      "first_call_order": 5
+    },
+    {
+      "module_name": "llama_cpp.llama_tokenizer",
+      "class_name": "LlamaTokenizer",
+      "function_name": "tokenize",
+      "first_call_order": 6
+    },
+    {
+      "module_name": "llama_cpp._internals",
+      "class_name": "LlamaModel",
+      "function_name": "tokenize",
+      "first_call_order": 7
+    },
+    {
+      "module_name": "llama_cpp._internals",
+      "class_name": "LlamaModel",
+      "function_name": "n_ctx_train",
+      "first_call_order": 8
+    },
+    {
+      "module_name": "llama_cpp.llama",
+      "class_name": "Llama",
+      "function_name": "create_completion",
+      "first_call_order": 9
+    },
+    {
+      "module_name": "llama_cpp.llama",
+      "class_name": "Llama",
+      "function_name": "_create_completion",
+      "first_call_order": 10
+    },
+    {
+      "module_name": "llama_cpp.llama",
+      "class_name": "Llama",
+      "function_name": "token_bos",
+      "first_call_order": 11
+    },
+    {
+      "module_name": "llama_cpp._internals",
+      "class_name": "LlamaModel",
+      "function_name": "token_bos",
+      "first_call_order": 12
+    },
+    {
+      "module_name": "llama_cpp._internals",
+      "class_name": "LlamaModel",
+      "function_name": "token_cls",
+      "first_call_order": 13
+    },
+    {
+      "module_name": "llama_cpp._internals",
+      "class_name": "LlamaModel",
+      "function_name": "token_sep",
+      "first_call_order": 14
+    },
+    {
+      "module_name": "llama_cpp.llama",
+      "class_name": "Llama",
+      "function_name": "token_eos",
+      "first_call_order": 15
+    },
+    {
+      "module_name": "llama_cpp._internals",
+      "class_name": "LlamaModel",
+      "function_name": "token_eos",
+      "first_call_order": 16
+    },
+    {
+      "module_name": "llama_cpp.llama",
+      "class_name": "Llama",
+      "function_name": "set_seed",
+      "first_call_order": 19
+    },
+    {
+      "module_name": "llama_cpp.llama",
+      "class_name": "Llama",
+      "function_name": "generate",
+      "first_call_order": 20
+    },
+    {
+      "module_name": "llama_cpp.llama",
+      "class_name": "Llama",
+      "function_name": "_init_sampler",
+      "first_call_order": 21
+    },
+    {
+      "module_name": "llama_cpp._internals",
+      "class_name": "LlamaSampler",
+      "function_name": "__init__",
+      "first_call_order": 22
+    },
+    {
+      "module_name": "llama_cpp._internals",
+      "class_name": "LlamaSampler",
+      "function_name": "add_penalties",
+      "first_call_order": 23
+    },
+    {
+      "module_name": "llama_cpp._internals",
+      "class_name": "LlamaSampler",
+      "function_name": "add_top_k",
+      "first_call_order": 24
+    },
+    {
+      "module_name": "llama_cpp._internals",
+      "class_name": "LlamaSampler",
+      "function_name": "add_typical",
+      "first_call_order": 25
+    },
+    {
+      "module_name": "llama_cpp._internals",
+      "class_name": "LlamaSampler",
+      "function_name": "add_top_p",
+      "first_call_order": 26
+    },
+    {
+      "module_name": "llama_cpp._internals",
+      "class_name": "LlamaSampler",
+      "function_name": "add_min_p",
+      "first_call_order": 27
+    },
+    {
+      "module_name": "llama_cpp._internals",
+      "class_name": "LlamaSampler",
+      "function_name": "add_temp",
+      "first_call_order": 28
+    },
+    {
+      "module_name": "llama_cpp._internals",
+      "class_name": "LlamaSampler",
+      "function_name": "add_dist",
+      "first_call_order": 29
+    },
+    {
+      "module_name": "llama_cpp.llama",
+      "class_name": "Llama",
+      "function_name": "reset",
+      "first_call_order": 30
+    },
+    {
+      "module_name": "llama_cpp.llama",
+      "class_name": "Llama",
+      "function_name": "eval",
+      "first_call_order": 31
+    },
+    {
+      "module_name": "llama_cpp._internals",
+      "class_name": "LlamaContext",
+      "function_name": "kv_cache_seq_rm",
+      "first_call_order": 32
+    },
+    {
+      "module_name": "llama_cpp._internals",
+      "class_name": "LlamaBatch",
+      "function_name": "set_batch",
+      "first_call_order": 33
+    },
+    {
+      "module_name": "llama_cpp._internals",
+      "class_name": "LlamaContext",
+      "function_name": "decode",
+      "first_call_order": 34
+    },
+    {
+      "module_name": "llama_cpp.llama",
+      "class_name": "Llama",
+      "function_name": "sample",
+      "first_call_order": 35
+    },
+    {
+      "module_name": "llama_cpp.llama",
+      "class_name": "Llama",
+      "function_name": "ctx",
+      "first_call_order": 36
+    },
+    {
+      "module_name": "llama_cpp._internals",
+      "class_name": "LlamaSampler",
+      "function_name": "sample",
+      "first_call_order": 37
+    },
+    {
+      "module_name": "llama_cpp.llama",
+      "class_name": "Llama",
+      "function_name": "_input_ids",
+      "first_call_order": 38
+    },
+    {
+      "module_name": "llama_cpp.llama",
+      "class_name": "Llama",
+      "function_name": "_scores",
+      "first_call_order": 39
+    },
+    {
+      "module_name": "llama_cpp.llama",
+      "class_name": "StoppingCriteriaList",
+      "function_name": "__call__",
+      "first_call_order": 40
+    },
+    {
+      "module_name": "llama_cpp.llama_chat_format",
+      "class_name": null,
+      "function_name": "stop_on_last_token",
+      "first_call_order": 41
+    },
+    {
+      "module_name": "llama_cpp.llama",
+      "class_name": "Llama",
+      "function_name": "detokenize",
+      "first_call_order": 42
+    },
+    {
+      "module_name": "llama_cpp.llama_tokenizer",
+      "class_name": "LlamaTokenizer",
+      "function_name": "detokenize",
+      "first_call_order": 43
+    },
+    {
+      "module_name": "llama_cpp._internals",
+      "class_name": "LlamaModel",
+      "function_name": "detokenize",
+      "first_call_order": 44
+    },
+    {
+      "module_name": "llama_cpp.llama_chat_format",
+      "class_name": null,
+      "function_name": "_convert_completion_to_chat",
+      "first_call_order": 120
+    },
+    {
+      "module_name": "llama_cpp.llama_chat_format",
+      "class_name": null,
+      "function_name": "_convert_text_completion_to_chat",
+      "first_call_order": 121
+    },
+    {
+      "module_name": "llama_cpp.llama_chat_format",
+      "class_name": null,
+      "function_name": "_convert_text_completion_logprobs_to_chat",
+      "first_call_order": 122
+    }
+  ],
+  "call_trace": [
+    {
+      "module_name": "llama_cpp.llama",
+      "class_name": "Llama",
+      "function_name": "create_chat_completion",
+      "call_order": 1
+    },
+    {
+      "module_name": "llama_cpp.llama_chat_format",
+      "class_name": null,
+      "function_name": "chat_completion_handler",
+      "call_order": 2
+    },
+    {
+      "module_name": "llama_cpp.llama_chat_format",
+      "class_name": "Jinja2ChatFormatter",
+      "function_name": "__call__",
+      "call_order": 3
+    },
+    {
+      "module_name": "llama_cpp.llama_chat_format",
+      "class_name": "ChatFormatterResponse",
+      "function_name": "__init__",
+      "call_order": 4
+    },
+    {
+      "module_name": "llama_cpp.llama",
+      "class_name": "Llama",
+      "function_name": "tokenize",
+      "call_order": 5
+    },
+    {
+      "module_name": "llama_cpp.llama_tokenizer",
+      "class_name": "LlamaTokenizer",
+      "function_name": "tokenize",
+      "call_order": 6
+    },
+    {
+      "module_name": "llama_cpp._internals",
+      "class_name": "LlamaModel",
+      "function_name": "tokenize",
+      "call_order": 7
+    },
+    {
+      "module_name": "llama_cpp._internals",
+      "class_name": "LlamaModel",
+      "function_name": "n_ctx_train",
+      "call_order": 8
+    },
+    {
+      "module_name": "llama_cpp.llama",
+      "class_name": "Llama",
+      "function_name": "create_completion",
+      "call_order": 9
+    },
+    {
+      "module_name": "llama_cpp.llama",
+      "class_name": "Llama",
+      "function_name": "_create_completion",
+      "call_order": 10
+    },
+    {
+      "module_name": "llama_cpp.llama",
+      "class_name": "Llama",
+      "function_name": "token_bos",
+      "call_order": 11
+    },
+    {
+      "module_name": "llama_cpp._internals",
+      "class_name": "LlamaModel",
+      "function_name": "token_bos",
+      "call_order": 12
+    },
+    {
+      "module_name": "llama_cpp._internals",
+      "class_name": "LlamaModel",
+      "function_name": "token_cls",
+      "call_order": 13
+    },
+    {
+      "module_name": "llama_cpp._internals",
+      "class_name": "LlamaModel",
+      "function_name": "token_sep",
+      "call_order": 14
+    },
+    {
+      "module_name": "llama_cpp.llama",
+      "class_name": "Llama",
+      "function_name": "token_eos",
+      "call_order": 15
+    },
+    {
+      "module_name": "llama_cpp._internals",
+      "class_name": "LlamaModel",
+      "function_name": "token_eos",
+      "call_order": 16
+    },
+    {
+      "module_name": "llama_cpp.llama",
+      "class_name": "Llama",
+      "function_name": "token_bos",
+      "call_order": 17
+    },
+    {
+      "module_name": "llama_cpp._internals",
+      "class_name": "LlamaModel",
+      "function_name": "token_bos",
+      "call_order": 18
+    },
+    {
+      "module_name": "llama_cpp.llama",
+      "class_name": "Llama",
+      "function_name": "set_seed",
+      "call_order": 19
+    },
+    {
+      "module_name": "llama_cpp.llama",
+      "class_name": "Llama",
+      "function_name": "generate",
+      "call_order": 20
+    },
+    {
+      "module_name": "llama_cpp.llama",
+      "class_name": "Llama",
+      "function_name": "_init_sampler",
+      "call_order": 21
+    },
+    {
+      "module_name": "llama_cpp._internals",
+      "class_name": "LlamaSampler",
+      "function_name": "__init__",
+      "call_order": 22
+    },
+    {
+      "module_name": "llama_cpp._internals",
+      "class_name": "LlamaSampler",
+      "function_name": "add_penalties",
+      "call_order": 23
+    },
+    {
+      "module_name": "llama_cpp._internals",
+      "class_name": "LlamaSampler",
+      "function_name": "add_top_k",
+      "call_order": 24
+    },
+    {
+      "module_name": "llama_cpp._internals",
+      "class_name": "LlamaSampler",
+      "function_name": "add_typical",
+      "call_order": 25
+    },
+    {
+      "module_name": "llama_cpp._internals",
+      "class_name": "LlamaSampler",
+      "function_name": "add_top_p",
+      "call_order": 26
+    },
+    {
+      "module_name": "llama_cpp._internals",
+      "class_name": "LlamaSampler",
+      "function_name": "add_min_p",
+      "call_order": 27
+    },
+    {
+      "module_name": "llama_cpp._internals",
+      "class_name": "LlamaSampler",
+      "function_name": "add_temp",
+      "call_order": 28
+    },
+    {
+      "module_name": "llama_cpp._internals",
+      "class_name": "LlamaSampler",
+      "function_name": "add_dist",
+      "call_order": 29
+    },
+    {
+      "module_name": "llama_cpp.llama",
+      "class_name": "Llama",
+      "function_name": "reset",
+      "call_order": 30
+    },
+    {
+      "module_name": "llama_cpp.llama",
+      "class_name": "Llama",
+      "function_name": "eval",
+      "call_order": 31
+    },
+    {
+      "module_name": "llama_cpp._internals",
+      "class_name": "LlamaContext",
+      "function_name": "kv_cache_seq_rm",
+      "call_order": 32
+    },
+    {
+      "module_name": "llama_cpp._internals",
+      "class_name": "LlamaBatch",
+      "function_name": "set_batch",
+      "call_order": 33
+    },
+    {
+      "module_name": "llama_cpp._internals",
+      "class_name": "LlamaContext",
+      "function_name": "decode",
+      "call_order": 34
+    },
+    {
+      "module_name": "llama_cpp.llama",
+      "class_name": "Llama",
+      "function_name": "sample",
+      "call_order": 35
+    },
+    {
+      "module_name": "llama_cpp.llama",
+      "class_name": "Llama",
+      "function_name": "ctx",
+      "call_order": 36
+    },
+    {
+      "module_name": "llama_cpp._internals",
+      "class_name": "LlamaSampler",
+      "function_name": "sample",
+      "call_order": 37
+    },
+    {
+      "module_name": "llama_cpp.llama",
+      "class_name": "Llama",
+      "function_name": "_input_ids",
+      "call_order": 38
+    },
+    {
+      "module_name": "llama_cpp.llama",
+      "class_name": "Llama",
+      "function_name": "_scores",
+      "call_order": 39
+    },
+    {
+      "module_name": "llama_cpp.llama",
+      "class_name": "StoppingCriteriaList",
+      "function_name": "__call__",
+      "call_order": 40
+    },
+    {
+      "module_name": "llama_cpp.llama_chat_format",
+      "class_name": null,
+      "function_name": "stop_on_last_token",
+      "call_order": 41
+    },
+    {
+      "module_name": "llama_cpp.llama",
+      "class_name": "Llama",
+      "function_name": "detokenize",
+      "call_order": 42
+    },
+    {
+      "module_name": "llama_cpp.llama_tokenizer",
+      "class_name": "LlamaTokenizer",
+      "function_name": "detokenize",
+      "call_order": 43
+    },
+    {
+      "module_name": "llama_cpp._internals",
+      "class_name": "LlamaModel",
+      "function_name": "detokenize",
+      "call_order": 44
+    },
+    {
+      "module_name": "llama_cpp._internals",
+      "class_name": "LlamaModel",
+      "function_name": "token_bos",
+      "call_order": 45
+    },
+    {
+      "module_name": "llama_cpp.llama",
+      "class_name": "Llama",
+      "function_name": "generate",
+      "call_order": 46
+    },
+    {
+      "module_name": "llama_cpp.llama",
+      "class_name": "Llama",
+      "function_name": "eval",
+      "call_order": 47
+    },
+    {
+      "module_name": "llama_cpp._internals",
+      "class_name": "LlamaContext",
+      "function_name": "kv_cache_seq_rm",
+      "call_order": 48
+    },
+    {
+      "module_name": "llama_cpp._internals",
+      "class_name": "LlamaBatch",
+      "function_name": "set_batch",
+      "call_order": 49
+    },
+    {
+      "module_name": "llama_cpp._internals",
+      "class_name": "LlamaContext",
+      "function_name": "decode",
+      "call_order": 50
+    },
+    {
+      "module_name": "llama_cpp.llama",
+      "class_name": "Llama",
+      "function_name": "sample",
+      "call_order": 51
+    },
+    {
+      "module_name": "llama_cpp.llama",
+      "class_name": "Llama",
+      "function_name": "ctx",
+      "call_order": 52
+    },
+    {
+      "module_name": "llama_cpp._internals",
+      "class_name": "LlamaSampler",
+      "function_name": "sample",
+      "call_order": 53
+    },
+    {
+      "module_name": "llama_cpp.llama",
+      "class_name": "Llama",
+      "function_name": "_input_ids",
+      "call_order": 54
+    },
+    {
+      "module_name": "llama_cpp.llama",
+      "class_name": "Llama",
+      "function_name": "_scores",
+      "call_order": 55
+    },
+    {
+      "module_name": "llama_cpp.llama",
+      "class_name": "StoppingCriteriaList",
+      "function_name": "__call__",
+      "call_order": 56
+    },
+    {
+      "module_name": "llama_cpp.llama_chat_format",
+      "class_name": null,
+      "function_name": "stop_on_last_token",
+      "call_order": 57
+    },
+    {
+      "module_name": "llama_cpp.llama",
+      "class_name": "Llama",
+      "function_name": "detokenize",
+      "call_order": 58
+    },
+    {
+      "module_name": "llama_cpp.llama_tokenizer",
+      "class_name": "LlamaTokenizer",
+      "function_name": "detokenize",
+      "call_order": 59
+    },
+    {
+      "module_name": "llama_cpp._internals",
+      "class_name": "LlamaModel",
+      "function_name": "detokenize",
+      "call_order": 60
+    },
+    {
+      "module_name": "llama_cpp._internals",
+      "class_name": "LlamaModel",
+      "function_name": "token_bos",
+      "call_order": 61
+    },
+    {
+      "module_name": "llama_cpp.llama",
+      "class_name": "Llama",
+      "function_name": "generate",
+      "call_order": 62
+    },
+    {
+      "module_name": "llama_cpp.llama",
+      "class_name": "Llama",
+      "function_name": "eval",
+      "call_order": 63
+    },
+    {
+      "module_name": "llama_cpp._internals",
+      "class_name": "LlamaContext",
+      "function_name": "kv_cache_seq_rm",
+      "call_order": 64
+    },
+    {
+      "module_name": "llama_cpp._internals",
+      "class_name": "LlamaBatch",
+      "function_name": "set_batch",
+      "call_order": 65
+    },
+    {
+      "module_name": "llama_cpp._internals",
+      "class_name": "LlamaContext",
+      "function_name": "decode",
+      "call_order": 66
+    },
+    {
+      "module_name": "llama_cpp.llama",
+      "class_name": "Llama",
+      "function_name": "sample",
+      "call_order": 67
+    },
+    {
+      "module_name": "llama_cpp.llama",
+      "class_name": "Llama",
+      "function_name": "ctx",
+      "call_order": 68
+    },
+    {
+      "module_name": "llama_cpp._internals",
+      "class_name": "LlamaSampler",
+      "function_name": "sample",
+      "call_order": 69
+    },
+    {
+      "module_name": "llama_cpp.llama",
+      "class_name": "Llama",
+      "function_name": "_input_ids",
+      "call_order": 70
+    },
+    {
+      "module_name": "llama_cpp.llama",
+      "class_name": "Llama",
+      "function_name": "_scores",
+      "call_order": 71
+    },
+    {
+      "module_name": "llama_cpp.llama",
+      "class_name": "StoppingCriteriaList",
+      "function_name": "__call__",
+      "call_order": 72
+    },
+    {
+      "module_name": "llama_cpp.llama_chat_format",
+      "class_name": null,
+      "function_name": "stop_on_last_token",
+      "call_order": 73
+    },
+    {
+      "module_name": "llama_cpp.llama",
+      "class_name": "Llama",
+      "function_name": "detokenize",
+      "call_order": 74
+    },
+    {
+      "module_name": "llama_cpp.llama_tokenizer",
+      "class_name": "LlamaTokenizer",
+      "function_name": "detokenize",
+      "call_order": 75
+    },
+    {
+      "module_name": "llama_cpp._internals",
+      "class_name": "LlamaModel",
+      "function_name": "detokenize",
+      "call_order": 76
+    },
+    {
+      "module_name": "llama_cpp._internals",
+      "class_name": "LlamaModel",
+      "function_name": "token_bos",
+      "call_order": 77
+    },
+    {
+      "module_name": "llama_cpp.llama",
+      "class_name": "Llama",
+      "function_name": "generate",
+      "call_order": 78
+    },
+    {
+      "module_name": "llama_cpp.llama",
+      "class_name": "Llama",
+      "function_name": "eval",
+      "call_order": 79
+    },
+    {
+      "module_name": "llama_cpp._internals",
+      "class_name": "LlamaContext",
+      "function_name": "kv_cache_seq_rm",
+      "call_order": 80
+    },
+    {
+      "module_name": "llama_cpp._internals",
+      "class_name": "LlamaBatch",
+      "function_name": "set_batch",
+      "call_order": 81
+    },
+    {
+      "module_name": "llama_cpp._internals",
+      "class_name": "LlamaContext",
+      "function_name": "decode",
+      "call_order": 82
+    },
+    {
+      "module_name": "llama_cpp.llama",
+      "class_name": "Llama",
+      "function_name": "sample",
+      "call_order": 83
+    },
+    {
+      "module_name": "llama_cpp.llama",
+      "class_name": "Llama",
+      "function_name": "ctx",
+      "call_order": 84
+    },
+    {
+      "module_name": "llama_cpp._internals",
+      "class_name": "LlamaSampler",
+      "function_name": "sample",
+      "call_order": 85
+    },
+    {
+      "module_name": "llama_cpp.llama",
+      "class_name": "Llama",
+      "function_name": "_input_ids",
+      "call_order": 86
+    },
+    {
+      "module_name": "llama_cpp.llama",
+      "class_name": "Llama",
+      "function_name": "_scores",
+      "call_order": 87
+    },
+    {
+      "module_name": "llama_cpp.llama",
+      "class_name": "StoppingCriteriaList",
+      "function_name": "__call__",
+      "call_order": 88
+    },
+    {
+      "module_name": "llama_cpp.llama_chat_format",
+      "class_name": null,
+      "function_name": "stop_on_last_token",
+      "call_order": 89
+    },
+    {
+      "module_name": "llama_cpp.llama",
+      "class_name": "Llama",
+      "function_name": "detokenize",
+      "call_order": 90
+    },
+    {
+      "module_name": "llama_cpp.llama_tokenizer",
+      "class_name": "LlamaTokenizer",
+      "function_name": "detokenize",
+      "call_order": 91
+    },
+    {
+      "module_name": "llama_cpp._internals",
+      "class_name": "LlamaModel",
+      "function_name": "detokenize",
+      "call_order": 92
+    },
+    {
+      "module_name": "llama_cpp._internals",
+      "class_name": "LlamaModel",
+      "function_name": "token_bos",
+      "call_order": 93
+    },
+    {
+      "module_name": "llama_cpp.llama",
+      "class_name": "Llama",
+      "function_name": "generate",
+      "call_order": 94
+    },
+    {
+      "module_name": "llama_cpp.llama",
+      "class_name": "Llama",
+      "function_name": "eval",
+      "call_order": 95
+    },
+    {
+      "module_name": "llama_cpp._internals",
+      "class_name": "LlamaContext",
+      "function_name": "kv_cache_seq_rm",
+      "call_order": 96
+    },
+    {
+      "module_name": "llama_cpp._internals",
+      "class_name": "LlamaBatch",
+      "function_name": "set_batch",
+      "call_order": 97
+    },
+    {
+      "module_name": "llama_cpp._internals",
+      "class_name": "LlamaContext",
+      "function_name": "decode",
+      "call_order": 98
+    },
+    {
+      "module_name": "llama_cpp.llama",
+      "class_name": "Llama",
+      "function_name": "sample",
+      "call_order": 99
+    },
+    {
+      "module_name": "llama_cpp.llama",
+      "class_name": "Llama",
+      "function_name": "ctx",
+      "call_order": 100
+    },
+    {
+      "module_name": "llama_cpp._internals",
+      "class_name": "LlamaSampler",
+      "function_name": "sample",
+      "call_order": 101
+    },
+    {
+      "module_name": "llama_cpp.llama",
+      "class_name": "Llama",
+      "function_name": "_input_ids",
+      "call_order": 102
+    },
+    {
+      "module_name": "llama_cpp.llama",
+      "class_name": "Llama",
+      "function_name": "_scores",
+      "call_order": 103
+    },
+    {
+      "module_name": "llama_cpp.llama",
+      "class_name": "StoppingCriteriaList",
+      "function_name": "__call__",
+      "call_order": 104
+    },
+    {
+      "module_name": "llama_cpp.llama_chat_format",
+      "class_name": null,
+      "function_name": "stop_on_last_token",
+      "call_order": 105
+    },
+    {
+      "module_name": "llama_cpp.llama",
+      "class_name": "Llama",
+      "function_name": "detokenize",
+      "call_order": 106
+    },
+    {
+      "module_name": "llama_cpp.llama_tokenizer",
+      "class_name": "LlamaTokenizer",
+      "function_name": "detokenize",
+      "call_order": 107
+    },
+    {
+      "module_name": "llama_cpp._internals",
+      "class_name": "LlamaModel",
+      "function_name": "detokenize",
+      "call_order": 108
+    },
+    {
+      "module_name": "llama_cpp._internals",
+      "class_name": "LlamaModel",
+      "function_name": "token_bos",
+      "call_order": 109
+    },
+    {
+      "module_name": "llama_cpp.llama",
+      "class_name": "Llama",
+      "function_name": "detokenize",
+      "call_order": 110
+    },
+    {
+      "module_name": "llama_cpp.llama_tokenizer",
+      "class_name": "LlamaTokenizer",
+      "function_name": "detokenize",
+      "call_order": 111
+    },
+    {
+      "module_name": "llama_cpp._internals",
+      "class_name": "LlamaModel",
+      "function_name": "detokenize",
+      "call_order": 112
+    },
+    {
+      "module_name": "llama_cpp._internals",
+      "class_name": "LlamaModel",
+      "function_name": "token_bos",
+      "call_order": 113
+    },
+    {
+      "module_name": "llama_cpp.llama",
+      "class_name": "Llama",
+      "function_name": "generate",
+      "call_order": 114
+    },
+    {
+      "module_name": "llama_cpp.llama",
+      "class_name": "Llama",
+      "function_name": "_input_ids",
+      "call_order": 115
+    },
+    {
+      "module_name": "llama_cpp.llama",
+      "class_name": "Llama",
+      "function_name": "_scores",
+      "call_order": 116
+    },
+    {
+      "module_name": "llama_cpp.llama",
+      "class_name": "StoppingCriteriaList",
+      "function_name": "__call__",
+      "call_order": 117
+    },
+    {
+      "module_name": "llama_cpp.llama_chat_format",
+      "class_name": null,
+      "function_name": "stop_on_last_token",
+      "call_order": 118
+    },
+    {
+      "module_name": "llama_cpp.llama",
+      "class_name": "Llama",
+      "function_name": "_create_completion",
+      "call_order": 119
+    },
+    {
+      "module_name": "llama_cpp.llama_chat_format",
+      "class_name": null,
+      "function_name": "_convert_completion_to_chat",
+      "call_order": 120
+    },
+    {
+      "module_name": "llama_cpp.llama_chat_format",
+      "class_name": null,
+      "function_name": "_convert_text_completion_to_chat",
+      "call_order": 121
+    },
+    {
+      "module_name": "llama_cpp.llama_chat_format",
+      "class_name": null,
+      "function_name": "_convert_text_completion_logprobs_to_chat",
+      "call_order": 122
+    }
+  ]
+}
